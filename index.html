@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Login/Sign-up</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://kit.fontawesome.com/197f87237f.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="container">
+			
+			<div class="content first">
+				<div class="column1">
+					<h2 class="title">Log-IN HERE!</h2>
+					<p class="text">Sign-in here</p>
+					<p class="text">Get access to your account</p>
+					<button class="btn" onclick="call1()">SIGN-IN</button>
+				</div>
+				<div class="column2">
+					<h2 class="title">SIGN-UP</h2>
+					<div class="icons">
+						<ul class="list-icons">
+							<a href="#"><li class="item"><i class="fab fa-facebook-f"></i></li></a>
+							<a href="#"><li class="item"><i class="fab fa-google"></i></li></a>
+							<a href="#"><li class="item"><i class="fab fa-linkedin-in"></i></li></a>
+						</ul>
+					</div>
+					<p class="text">Enter your details</p>
+					<form class="form" name="myForm1">
+						<label class="label">
+							<i class="fas fa-user"></i>
+							<input placeholder="Name" name="fname">
+						</label>
+						<label class="label">
+							<i class="fas fa-phone-alt"></i>
+							<input type="number" placeholder="Number" name="num">
+						</label>
+						<label class="label">
+							<i class="fas fa-envelope"></i>
+							<input placeholder="E-mail" name="mail">
+						</label>
+						<label class="label">
+							<i class="fas fa-user-lock"></i>
+							<input type="password" placeholder="Password" name="pass">
+						</label>
+						<button type="button" class="btn" id="signup1" onclick="modal()">SIGN-UP</button>
+					</form>
+				</div>
+			</div>
+			
+			<div class="content second">
+				<div class="column1">
+					<h2 class="title">New to the Site?</h2>
+					<p class="text">Sign-up here</p>
+					<p class="text">Create new account </p>
+					<button class="btn" onclick="call2()">SIGN-UP</button>
+				</div>
+				<div class="column2">
+					<h2 class="title">SIGN-IN</h2>
+					<div class="icons">
+						<ul class="list-icons">
+							<li class="item"><i class="fab fa-facebook-f"></i></li>
+							<li class="item"><i class="fab fa-google"></i></li>
+							<li class="item"><i class="fab fa-linkedin-in"></i></li>
+						</ul>
+					</div>
+					<p class="text">Enter account details</p>
+					<form class="form" name="myForm2">
+						<label class="label">
+							<i class="fas fa-envelope"></i>
+							<input type="email" placeholder="E-mail" name="mail">
+						</label>
+						<label class="label">
+							<i class="fas fa-user-lock"></i>
+							<input type="password" placeholder="Password" name="pass">
+						</label>
+						<button class="btn" onclick="modal2()" type="button">SIGN-IN</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="modal-bg">
+			<div class="modal">
+				<span onclick="closeModal();" class="modal-close"><b>X</b></span>
+				<div class="message">
+					<p id="msg"></p>
+				</div>
+				<div class="note">
+					1.Every feild is required<br>
+					2.Password should be atleast 6 chaeacters.<br>
+					3.Password should contain atleast one letter and one alphabet.
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="index.js"></script>
+		
+	</body>
+</html>
